@@ -14,12 +14,55 @@
 5 - Oca
 6 - Puente
 12 - Puente
+14 - Oca
+18 - Oca
 19 - Posada
+23 - Oca
 26 - Dados
+27 - Oca
 31 - Pozo
+32 - Oca
+36 - Oca
+41 - Oca
 42 - Laberinto
+45 - Oca
+50 - Oca
 52 - Carcel
 53 - Dados
+54 - Oca
 58 - Calavera
-63 - Meta
+59 - Oca
+63 - Meta / Oca
+```
+
+- Ejemplo con Java
+
+```
+for (int i = 0; i <= 63; i++) {
+    switch(i){
+        case 5 : break; //Oca
+        case 6 : break; //Puente
+        case 12 : break; //Puente
+        case 14 : break; //Oca
+        case 18 : break; //Oca
+        case 19 : break; //Posada
+        case 23 : break; //Oca
+        case 26 : break; //Dados
+        case 27 : break; //Oca
+        case 31 : break; //Pozo
+        case 32 : break; //Oca
+        case 36 : break; //Oca
+        case 41 : break; //Oca
+        case 42 : break; //Laberinto 
+        case 45 : break; //Oca
+        case 50 : break; //Oca
+        case 52 : break; //Carcel
+        case 53 : break; //Dados
+        case 54 : break; //Oca
+        case 58 : break; //Calavera
+        case 59 : break; //Oca
+        case 63 : break; // Meta / Oca
+        default : break;
+    }
+}
 ```
