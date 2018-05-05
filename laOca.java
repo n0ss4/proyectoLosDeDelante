@@ -11,18 +11,17 @@ public class Main {
         int i = 1;
         boolean salir = true;
         while (salir == true) {
-            if (i == 63){
+            if (turnos > 0) {
+                turnos--;
+            }
+            else if (i == 63){
                 salir = false;
             }
             else if (i > 63){
                 i = 63 - x;
-            }
-            else if (turnos > 0) {
-                turnos--;
             }else {
                 x = rand.nextInt(6) + 1;
                 i += x;
-                System.out.println(i);
                 boolean oca = true;
                 boolean puente = true;
                 switch (i) {
@@ -38,6 +37,12 @@ public class Main {
                             puente = false;
                         } else puente = true;
                         break; //Puente
+                    case 9:
+                        if (oca == true) {
+                            i = i + 9;
+                            oca = false;
+                        } else oca = true;
+                        break; //Oca
                     case 12:
                         if (puente == true) {
                             i = 6;
@@ -131,11 +136,12 @@ public class Main {
                             oca = false;
                         } else oca = true;
                         break; //Oca
-                    case 63:
-                        break; // Meta / Oca
+                    /*case 63:
+                        break; // Meta / Oca*/
                     default:
                         break;
                 }
+                System.out.println(i);
             }
         }
     }
