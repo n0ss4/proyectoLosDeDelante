@@ -13,6 +13,7 @@
 ```
 5 - Oca
 6 - Puente
+9 - Oca
 12 - Puente
 14 - Oca
 18 - Oca
@@ -42,6 +43,7 @@ for (int i = 0; i <= 63; i++) {
     switch(i){
         case 5 : break; //Oca
         case 6 : break; //Puente
+        case 9 : break; //Oca
         case 12 : break; //Puente
         case 14 : break; //Oca
         case 18 : break; //Oca
