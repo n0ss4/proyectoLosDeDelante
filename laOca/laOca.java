@@ -1,5 +1,3 @@
-//Mas o menos hecho sin clases ni nada, creo que lo de los turnos falla un poco.
-
 import java.util.Random;
 
 public class Main {
@@ -9,8 +7,10 @@ public class Main {
         int turnos = 0;
         int x = 0;
         int i = 1;
+        int resta = 0;
         boolean salir = true;
         while (salir == true) {
+            resta = i - 63;
             if (turnos > 0) {
                 turnos--;
             }
@@ -18,7 +18,7 @@ public class Main {
                 salir = false;
             }
             else if (i > 63){
-                i = 63 - x;
+                i = 63 - resta;
             }else {
                 x = rand.nextInt(6) + 1;
                 i += x;
