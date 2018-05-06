@@ -10,7 +10,6 @@ public class Main {
         int resta = 0;
         boolean salir = true;
         while (salir == true) {
-            resta = i - 63;
             if (turnos > 0) {
                 turnos--;
             }
@@ -18,6 +17,7 @@ public class Main {
                 salir = false;
             }
             else if (i > 63){
+                resta = i - 63;
                 i = 63 - resta;
             }else {
                 x = rand.nextInt(6) + 1;
@@ -71,7 +71,8 @@ public class Main {
                         } else oca = true;
                         break; //Oca
                     case 26:
-                        i += 26;
+                        x = rand.nextInt(6)+1;
+                        i += x;
                         break; //Dados
                     case 27:
                         if (oca == true) {
@@ -119,7 +120,8 @@ public class Main {
                         turnos += 3;
                         break; //Carcel
                     case 53:
-                        i += 53;
+                        x = rand.nextInt(6)+1;
+                        i += x;
                         break; //Dados
                     case 54:
                         if (oca == true) {
