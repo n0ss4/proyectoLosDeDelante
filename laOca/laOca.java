@@ -36,7 +36,7 @@ public class Main {
                             i = 12;
                             puente = false;
                         } else puente = true;
-                        break; //Puente
+                        break; //Puente.
                     case 9:
                         if (oca == true) {
                             i = i + 9;
