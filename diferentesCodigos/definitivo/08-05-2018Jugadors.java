@@ -12,6 +12,9 @@ public class Jugador {
     private GImage ficha;
     private int numero;
 
+
+    private int turnodeespera=0;
+
     public Jugador() {
         this.ficha = new GImage("a.png");
     }
@@ -29,4 +32,12 @@ public class Jugador {
     public int getNumero() {
         return numero;
     }
+    public int getTurnodeespera() {
+        return turnodeespera;
+    }
+
+    public void setTurnodeespera(int turnodeespera) {
+        this.turnodeespera = turnodeespera;
+    }
+
 }
